@@ -16,7 +16,7 @@ const ClinicsTable: FC<Props> = ({
       {isLoading && <div>Loading...</div>}
       {!isLoading && data && (
         <div>
-          <table>
+          <table border={1}>
             <thead>
               <tr>
                 <th>ID</th>
