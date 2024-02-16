@@ -1,0 +1,18 @@
+# If you run this outside of linux you may get issues
+# Especially on windows without using WSL.
+
+version: '3.8'
+services:
+  backend:
+    build: ./backend/
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+
+  frontend:
+    build: ./frontend/
+    ports:
+      - "4173:4173"
+    environment:
+      NODE_ENV: production
